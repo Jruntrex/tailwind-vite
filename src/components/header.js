@@ -4,8 +4,8 @@ export function getHeaderHTML(activePage) {
         <div class="max-w-4xl mx-auto flex justify-between items-center">
             <h1 class="text-xl font-bold">Vite + Tailwind v4</h1>
             <div class="flex gap-4">
-                <a href="/" class="hover:underline ${activePage === 'home' ? 'font-bold underline' : ''}">Головна</a>
-                <a href="/about.html" class="hover:underline ${activePage === 'about' ? 'font-bold underline' : ''}">Про нас</a>
+                <a href="tailwind-vite/index.html" class="hover:underline ${activePage === 'home' ? 'font-bold underline' : ''}">Головна</a>
+                <a href="tailwind-vite/about.html" class="hover:underline ${activePage === 'about' ? 'font-bold underline' : ''}">Про нас</a>
             </div>
         </div>
     </nav>
