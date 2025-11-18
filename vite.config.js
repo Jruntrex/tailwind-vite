@@ -5,4 +5,13 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  base: "tailwind-vite",
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        about: 'about.html',
+      }
+    }
+  }
 })
