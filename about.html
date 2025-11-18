@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Про нас - Vite + Tailwind</title>
+  </head>
+  <body class="min-h-screen flex flex-col bg-gray-50">
+    <nav class="bg-blue-600 text-white p-4">
+      <div class="max-w-4xl mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold">Vite + Tailwind v4</h1>
+        <div class="flex gap-4">
+          <a href="/" class="hover:underline">Головна</a>
+          <a href="/about.html" class="hover:underline font-bold underline">Про нас</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-1 max-w-4xl mx-auto px-4 py-12">
+      <section class="bg-white p-8 rounded-lg shadow mb-8">
+        <h1 class="text-3xl font-bold mb-6">Про проект 📚</h1>
+        <div class="space-y-4 text-gray-700">
+          <p>Це демонстраційний проект для навчання студентів.</p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Vite - швидка збірка</li>
+            <li>Tailwind CSS v4 - стилізація</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bg-white p-8 rounded-lg shadow max-w-md mx-auto text-center">
+        <h2 class="text-2xl font-bold mb-6">Лічильник</h2>
+        <div class="flex items-center justify-center gap-4 mb-4">
+          <button id="decrementBtn" class="bg-red-500 text-white w-12 h-12 rounded-full text-2xl hover:bg-red-600 cursor-pointer">-</button>
+          <span id="counterValue" class="text-4xl font-bold">0</span>
+          <button id="incrementBtn" class="bg-green-500 text-white w-12 h-12 rounded-full text-2xl hover:bg-green-600 cursor-pointer">+</button>
+        </div>
+        <button id="resetBtn" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 cursor-pointer">Скинути</button>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-6 mt-auto">
+      <p>© 2025 Навчальний проект для студентів МНЦ Боско</p>
+    </footer>
+
+    <script type="module" src="/src/about.js"></script>
+  </body>
+</html>
